@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Dungeon_BE.props" />
+</Project>
