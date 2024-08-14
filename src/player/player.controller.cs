@@ -20,32 +20,6 @@ public class PlayersController : ControllerBase
         return Ok(players);
     }
 
-    [HttpPost]
-    public async Task<ActionResult<Player>> AddPlayer([FromBody] PlayerDto playerDto)
-    {
-        if (!ModelState.IsValid)
-        {
-            return BadRequest(ModelState);
-        }
-
-        var player = new Player
-        {
-            Name = playerDto.Name,
-            Heart = playerDto.Heart,
-            Level = playerDto.Level,
-            Score = playerDto.Score
-        };
-
-        var createdPlayer = await _playersService.CreatePlayer(player);
-
-        if (createdPlayer == null)
-        {
-            return Conflict($"A player '{player.Name}' already exists.");
-        }
-
-        return CreatedAtAction(nameof(FindPlayerById), new { id = createdPlayer.Id }, createdPlayer);
-    }
-
     [HttpGet("{id}")]
     public async Task<ActionResult<Player>> FindPlayerById(string id)
     {

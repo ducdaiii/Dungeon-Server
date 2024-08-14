@@ -7,8 +7,19 @@ D:\Huflit\Dungeon_BE\bin\Debug\net8.0\Dungeon_BE.dll
 D:\Huflit\Dungeon_BE\bin\Debug\net8.0\Dungeon_BE.pdb
 D:\Huflit\Dungeon_BE\bin\Debug\net8.0\AWSSDK.Core.dll
 D:\Huflit\Dungeon_BE\bin\Debug\net8.0\AWSSDK.SecurityToken.dll
+D:\Huflit\Dungeon_BE\bin\Debug\net8.0\BCrypt.Net-Next.dll
 D:\Huflit\Dungeon_BE\bin\Debug\net8.0\DnsClient.dll
+D:\Huflit\Dungeon_BE\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\Huflit\Dungeon_BE\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
+D:\Huflit\Dungeon_BE\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\Huflit\Dungeon_BE\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Huflit\Dungeon_BE\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
+D:\Huflit\Dungeon_BE\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Huflit\Dungeon_BE\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Huflit\Dungeon_BE\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\Huflit\Dungeon_BE\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\Huflit\Dungeon_BE\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Huflit\Dungeon_BE\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 D:\Huflit\Dungeon_BE\bin\Debug\net8.0\Microsoft.OpenApi.dll
 D:\Huflit\Dungeon_BE\bin\Debug\net8.0\MongoDB.Bson.dll
 D:\Huflit\Dungeon_BE\bin\Debug\net8.0\MongoDB.Driver.dll
@@ -19,6 +30,7 @@ D:\Huflit\Dungeon_BE\bin\Debug\net8.0\Snappier.dll
 D:\Huflit\Dungeon_BE\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\Huflit\Dungeon_BE\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\Huflit\Dungeon_BE\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Huflit\Dungeon_BE\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 D:\Huflit\Dungeon_BE\bin\Debug\net8.0\ZstdSharp.dll
 D:\Huflit\Dungeon_BE\bin\Debug\net8.0\runtimes\linux\native\libmongocrypt.so
 D:\Huflit\Dungeon_BE\bin\Debug\net8.0\runtimes\osx\native\libmongocrypt.dylib
@@ -30,6 +42,7 @@ D:\Huflit\Dungeon_BE\obj\Debug\net8.0\Dungeon_BE.AssemblyInfo.cs
 D:\Huflit\Dungeon_BE\obj\Debug\net8.0\Dungeon_BE.csproj.CoreCompileInputs.cache
 D:\Huflit\Dungeon_BE\obj\Debug\net8.0\Dungeon_BE.MvcApplicationPartsAssemblyInfo.cs
 D:\Huflit\Dungeon_BE\obj\Debug\net8.0\Dungeon_BE.MvcApplicationPartsAssemblyInfo.cache
+D:\Huflit\Dungeon_BE\obj\Debug\net8.0\Dungeon_BE.sourcelink.json
 D:\Huflit\Dungeon_BE\obj\Debug\net8.0\staticwebassets.build.json
 D:\Huflit\Dungeon_BE\obj\Debug\net8.0\staticwebassets.development.json
 D:\Huflit\Dungeon_BE\obj\Debug\net8.0\staticwebassets\msbuild.Dungeon_BE.Microsoft.AspNetCore.StaticWebAssets.props
@@ -44,6 +57,3 @@ D:\Huflit\Dungeon_BE\obj\Debug\net8.0\refint\Dungeon_BE.dll
 D:\Huflit\Dungeon_BE\obj\Debug\net8.0\Dungeon_BE.pdb
 D:\Huflit\Dungeon_BE\obj\Debug\net8.0\Dungeon_BE.genruntimeconfig.cache
 D:\Huflit\Dungeon_BE\obj\Debug\net8.0\ref\Dungeon_BE.dll
-D:\Huflit\Dungeon_BE\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
-D:\Huflit\Dungeon_BE\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-D:\Huflit\Dungeon_BE\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll

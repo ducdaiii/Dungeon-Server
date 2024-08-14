@@ -21,20 +21,8 @@ public class PlayersService
         return await _context.Players.Find(p => p.Id == id).FirstOrDefaultAsync();
     }
 
-    public async Task<Player> CreatePlayer(Player player)
+    public async Task<List<Equipments>> GetEquipmentsUse()
     {
-        // Kiểm tra xem tên người chơi đã tồn tại chưa
-        var existingPlayer = await _context.Players
-            .Find(p => p.Name == player.Name)
-            .FirstOrDefaultAsync();
-
-        if (existingPlayer != null)
-        {
-            return null!; 
-        }
-
-        // Nếu tên chưa tồn tại, chèn người chơi mới
-        await _context.Players.InsertOneAsync(player);
-        return player;
+        return await _context.Equipments.Find(equipment => true).ToListAsync();
     }
 }
