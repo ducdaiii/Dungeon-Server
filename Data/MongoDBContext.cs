@@ -33,5 +33,4 @@ public class MongoDBContext
     public IMongoCollection<Weapon> Weapons => _database.GetCollection<Weapon>("weapons");
     public IMongoCollection<Equipments> Equipments => _database.GetCollection<Equipments>("equipments");
     public IMongoCollection<Monster> Monsters => _database.GetCollection<Monster>("monsters");
-    public IMongoCollection<Token> Token => _database.GetCollection<Token>("tokens");
 }

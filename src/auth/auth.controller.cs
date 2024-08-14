@@ -13,18 +13,18 @@ public class AuthController : ControllerBase
     }
 
     [HttpPost("register")]
-    public async Task<IActionResult> Register([FromBody] RegisterRequest request)
+    public async Task<IActionResult> Register([FromBody] PlayerDto request)
     {
-        var player = await _authService.RegisterAsync(request.Name, request.Email, request.Password);
+        var player = await _authService.RegisterAsync(request.Name, request.Email, request.PasswordHash);
         return Ok(player);
     }
 
     [HttpPost("login")]
-    public async Task<IActionResult> Login([FromBody] LoginRequest request)
+    public async Task<IActionResult> Login([FromBody] Player request)
     {
         try
         {
-            var token = await _authService.LoginAsync(request.Email, request.Password);
+            var token = await _authService.LoginAsync(request.Name, request.PasswordHash);
             return Ok(new { Token = token });
         }
         catch (Exception ex)

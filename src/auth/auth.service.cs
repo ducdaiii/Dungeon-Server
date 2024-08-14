@@ -33,23 +33,34 @@ public class AuthService
             Name = name,
             Email = email,
             PasswordHash = hashedPassword,
-            // Initialize other properties as needed
         };
 
         await _players.InsertOneAsync(player);
         return player;
     }
 
-    public async Task<string> LoginAsync(string email, string password)
+    public async Task<object> LoginAsync(string name, string password)
     {
-        var player = await _players.Find(p => p.Email == email).FirstOrDefaultAsync();
+        var player = await _players.Find(p => p.Name == name).FirstOrDefaultAsync();
         if (player == null || !BCrypt.Net.BCrypt.Verify(password, player.PasswordHash))
         {
-            throw new Exception("Invalid email or password.");
+            throw new Exception("Invalid username or password.");
         }
 
         var token = GenerateJwtToken(player);
-        return token;
+        return new
+        {
+            metadata = new
+            {
+                player = new
+                {
+                    _id = player.Id,
+                    userName = player.Name,
+                    password = player.PasswordHash
+                },
+                tokens = token
+            }
+        };
     }
 
     private string GenerateJwtToken(Player player)
