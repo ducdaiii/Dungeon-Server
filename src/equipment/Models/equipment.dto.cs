@@ -12,5 +12,4 @@ public class EquipmentDto
     [Required(ErrorMessage = "Status is required.")]
     [EnumDataType(typeof(StatusEquipmentEnum), ErrorMessage = "Invalid status value.")]
     public StatusEquipmentEnum Status { get; set; } = StatusEquipmentEnum.SPACE;
-    public string Description { get; set; } = "base";
 }
